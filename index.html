@@ -6,28 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stop Watch | Atikur Satter Mondal</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="" icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
-
     <div class="container">
-        <h1>Stop Watch</h1>
-        <div class="stopwatch">
-            <div class="display" id="display">00:00:00:00</div>
-            <div class="controls">
-                <button id="start-button">Start</button>
-                <button id="stop-button">Stop</button>
-                <button id="reset-button">Reset</button>
-                <button id="lap-button">Lap</button>
+        <header>
+            <h1 class="title">Precision Stopwatch</h1>
+        </header>
+
+        <main>
+            <div class="stopwatch">
+                <div class="display" id="display">00:00:00:00</div>
+                <div class="controls">
+                    <button id="start-button" class="btn start"><i class="fas fa-play"></i> Start</button>
+                    <button id="stop-button" class="btn stop"><i class="fas fa-pause"></i> Stop</button>
+                    <button id="reset-button" class="btn reset"><i class="fas fa-redo"></i> Reset</button>
+                    <button id="lap-button" class="btn lap"><i class="fas fa-flag"></i> Lap</button>
+                </div>
             </div>
-        </div>
 
-        <div class="lap-times">
-            <h2>Lap Times</h2>
-            <ul id="lap-list"></ul>
-        </div>
+            <div class="lap-times">
+                <h2>Lap Times</h2>
+                <ul id="lap-list" class="lap-list"></ul>
+            </div>
+        </main>
 
-        <script src="script.js"></script>
+        <footer>
+            <div class="description">
+                <h3>About This Stopwatch</h3>
+                <p>This precision stopwatch application allows you to accurately measure time intervals with hours,
+                    minutes, seconds, and centiseconds (1/100th of a second). Perfect for timing sports activities,
+                    cooking, or any task requiring precise time measurement.</p>
+                <p>Features include:</p>
+                <ul>
+                    <li>Start, stop, and reset functionality</li>
+                    <li>Lap time recording to track multiple intervals</li>
+                    <li>High precision timing with centisecond accuracy</li>
+                    <li>Clean, responsive interface that works on all devices</li>
+                </ul>
+                <p>Created by Atikur Satter Mondal</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
