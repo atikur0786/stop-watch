@@ -13,16 +13,21 @@
     <div class="container">
         <h1>Stop Watch</h1>
         <div class="stopwatch">
-            <div class="display" id="display">00:00:00</div>
+            <div class="display" id="display">00:00:00:00</div>
             <div class="controls">
-                <button id="startBtn">Start</button>
-                <button id="stopBtn">Stop</button>
-                <button id="resetBtn">Reset</button>
+                <button id="start-button">Start</button>
+                <button id="stop-button">Stop</button>
+                <button id="reset-button">Reset</button>
+                <button id="lap-button">Lap</button>
             </div>
         </div>
-    </div>
 
-    <script src="script.js"></script>
+        <div class="lap-times">
+            <h2>Lap Times</h2>
+            <ul id="lap-list"></ul>
+        </div>
+
+        <script src="script.js"></script>
 </body>
 
 </html>
